@@ -1,0 +1,54 @@
+.why {
+  width: 100%;
+  background: #f4f4f4;
+
+  .wrapper {
+    padding: 84px 0px;
+
+    @media screen and (max-width: 903px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 48px;
+      color: var(--heading);
+      font-family: Wesfy-Bold;
+      margin-bottom: 71px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 32px;
+      }
+    }
+
+    .grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 39px 111px;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 39px 50px;
+      }
+
+      @media screen and (max-width: 600px) {
+        text-align: center;
+      }
+
+      .item {
+        h3 {
+          font-size: 22px;
+          font-family: Proxima-Bold;
+          color: var(--new-blue);
+          margin-bottom: 19px;
+        }
+
+        p {
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

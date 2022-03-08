@@ -1,0 +1,135 @@
+// .caseStudies {
+//   width: 100%;
+//   margin-bottom: 85px;
+
+//   .wrapper {
+//     padding: 120px 0px;
+
+//     @media screen and (max-width: 700px) {
+//       padding: 120px 16px;
+//     }
+
+//     .container {
+//       margin: 0;
+//     }
+//   }
+// }
+
+.caseStudys {
+  width: 100%;
+  margin-bottom: 85px;
+
+  .caseStudies {
+    width: 100%;
+    margin-top: 115px;
+
+    h2 {
+      font-size: 35px;
+      color: var(--heading);
+      font-family: Wesfy-Bold;
+      margin-bottom: 71px;
+      text-align: center;
+
+      @media screen and (max-width: 700px) {
+        font-size: 32px;
+      }
+    }
+
+    .carousel {
+      width: 100%;
+
+      .caseGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        @media screen and (max-width: 1200px) {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          justify-content: center;
+        }
+
+        .caseCard {
+          position: relative;
+          height: 296px;
+
+          &:hover {
+            &::before {
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              background: rgba(41, 40, 40, 0.76);
+              z-index: 4;
+              border-radius: 4px;
+            }
+
+            .caseImg {
+              img {
+                filter: grayscale(100%);
+              }
+            }
+
+            .caseContent {
+              display: flex;
+            }
+          }
+
+          .caseImg {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 4px;
+            }
+          }
+
+          .caseContent {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 5;
+            text-align: center;
+            display: none;
+            padding: 0px 16px;
+
+            h3 {
+              font-family: Proxima-Bold;
+              font-size: 18px;
+              color: var(--white);
+            }
+
+            p {
+              max-width: 311px;
+              margin: 30px 0px;
+              color: var(--white);
+            }
+
+            a {
+              width: 148px;
+              height: 44px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 13px 16px;
+              color: var(--white);
+              font-size: 14px;
+              font-family: Proxima-Bold;
+              margin-top: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

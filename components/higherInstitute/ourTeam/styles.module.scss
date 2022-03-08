@@ -1,0 +1,192 @@
+.trustedBy {
+  width: 100%;
+  padding: 50px 0px 240px;
+  // background: url("/images/trusted-by-curl-bg.svg") no-repeat;
+  background-color: #e5e5e5;
+  background-size: cover;
+
+  @media (max-width: 600px) {
+    padding: 150px 0px;
+  }
+  .trustedByTextDiv {
+    h3 {
+      text-align: center;
+      font-size: 45px;
+      line-height: 48px;
+      text-transform: uppercase;
+    }
+  }
+
+  .swiperWrapper {
+    &.home {
+      min-height: 510px;
+
+      .swiper-pagination {
+        bottom: 0;
+      }
+
+      .swiper-pagination-bullet {
+        background: rgba(255, 255, 255, 0.78) !important;
+        height: 9px;
+        width: 9px;
+      }
+    }
+  }
+  .wrapper {
+    color: #1d1b1b;
+
+    // h5 {
+    //   font-size: 18px;
+    //   font-family: Wesfy-Bold;
+    //   line-height: 26px;
+    //   text-transform: uppercase;
+    // }
+
+    h3 {
+      font-size: 40px;
+      font-family: Wesfy-Bold;
+      line-height: 40px;
+      // max-width: 450px;
+      margin-bottom: 50px;
+      text-transform: capitalize;
+      color: #484646;
+
+      @media screen and (max-width: 700px) {
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+
+    > p {
+      max-width: 532px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .slideGroup {
+      max-width: 90%;
+      margin: 0 auto;
+      // margin-top: 57px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 53px;
+
+      @media screen and (max-width: 600px) {
+        max-width: 90%;
+
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(200px, 275px) !important
+        );
+        justify-content: center;
+      }
+
+      @media screen and (max-width: 900px) {
+        max-width: 100%;
+
+        grid-template-columns: repeat(auto-fit, minmax(300px, 375px));
+        justify-content: center;
+      }
+      // @media screen and (max-width: 1200px) {
+      //   grid-template-columns: repeat(auto-fit, minmax(400px, 475px));
+      //   justify-content: center;
+      // }
+
+      .slideItem {
+        // width: 275px;
+        // height: 295px;
+        // left: 429px;
+        background: #ffffff;
+        border: 0.5px solid #f3f2f2;
+        // box-shadow: 0px 0px 5px 1px rgba(89, 89, 89, 0.1);
+        border-radius: 4px;
+        // padding: 1rem;
+
+        .slideItemContent {
+          // border-bottom: 0.25px solid rgba(202, 193, 193, 0.87);
+          // padding: 40px 20px;
+          // text-align: justify;
+          img {
+            width: 100%;
+          }
+
+          h5 {
+            font-weight: 800;
+            font-size: 18px;
+            color: #000;
+            margin: 0 0 10px 0;
+          }
+        }
+        .slideItemFooter {
+          padding: 40px;
+
+          .slideFooterHeader {
+            h4 {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 24px;
+              color: #484646;
+              line-height: 29px;
+              margin: 0 0 10px 0;
+            }
+            p {
+              color: #484646;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 14px;
+              margin: 0 0 30px 0;
+            }
+          }
+
+          p {
+            color: #878787;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 0 30px 0;
+          }
+
+          h5 {
+            font-weight: 800;
+            font-size: 18px;
+            color: #000;
+            margin: 0 0 10px 0;
+          }
+
+          .social {
+            display: flex;
+            align-items: center;
+
+            img {
+              padding: 0 30px 0 0;
+            }
+          }
+        }
+
+        .swiper-pagination-bullet {
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+          color: #000;
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.2);
+        }
+
+        .swiper-pagination-bullet-active {
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+          color: #000;
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}

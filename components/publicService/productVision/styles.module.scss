@@ -1,0 +1,237 @@
+.buildingPartner {
+  width: 100%;
+  padding: 100px 0px;
+  // background: url("/images/long-curl-bg.svg") no-repeat;
+  background-color: #1d1b1b;
+  // color: white;
+  // background-size: cover;
+  // position: relative;
+  // background-size: contain;
+
+  @media (max-width: 600px) {
+    padding: 150px 0px;
+  }
+
+  .man {
+    img {
+      width: 700px !important;
+
+      @media (max-width: 600px) {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 900px) {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width: 1200px) {
+        max-width: 100%;
+        margin: 90px auto 0 auto;
+      }
+    }
+  }
+
+  .imageRight {
+    // margin: 0 0 100px 0;
+  }
+
+  .buildingPartnerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    // margin: 0 0 100px 0;
+    // left: 0;
+
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .buildingText {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+
+    // max-width: 60%;
+
+    h3 {
+      color: #fff;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 59px;
+      letter-spacing: 0.02em;
+      margin: 60px 0 0 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 23px;
+      margin: 0 0 2rem 0;
+      text-align: justify;
+    }
+
+    @media (max-width: 600px) {
+      width: 100% !important;
+      text-align: center;
+      align-items: center;
+
+      h3 {
+        width: 100%;
+        font-size: 32px !important;
+        line-height: 32px !important;
+        color: #fff;
+        margin: 0 0 2rem 0;
+      }
+      p {
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0 0 2rem 0;
+      }
+    }
+
+    @media (max-width: 900px) {
+      width: 600px;
+      text-align: center;
+      align-items: center;
+
+      h3 {
+        width: 100%;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 59px;
+        color: #fff;
+
+        margin: 0 0 2rem 0;
+      }
+      p {
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0 0 2rem 0;
+      }
+    }
+  }
+  .stackTextDiv {
+    display: flex;
+    margin: 0 0 0.5rem 0;
+
+    h5 {
+      padding: 20px 0 0 15px;
+      font-size: 18px;
+      // line-height: 50px;
+    }
+
+    img {
+      width: 42px;
+    }
+  }
+
+  .wrapper {
+    .heading {
+      h6 {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.025em;
+      }
+
+      p {
+        font-size: 48px;
+        line-height: 50px;
+        width: 851px;
+        letter-spacing: 0.01em;
+        font-weight: lighter;
+        text-transform: capitalize;
+        color: #484646;
+        // font-family: Wesfy;
+      }
+
+      @media (max-width: 600px) {
+        h6 {
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.025em;
+          text-align: center;
+        }
+
+        p {
+          font-size: 28px;
+          line-height: 50px;
+          width: 851px;
+          letter-spacing: 0.01em;
+          font-weight: lighter;
+          text-transform: capitalize;
+          color: #484646;
+          text-align: center;
+          // font-family: Wesfy;
+        }
+      }
+
+      @media (max-width: 900px) {
+        h6 {
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.025em;
+          text-align: center;
+        }
+
+        p {
+          font-size: 38px;
+          line-height: 50px;
+          width: 100%;
+          letter-spacing: 0.01em;
+          font-weight: lighter;
+          text-transform: capitalize;
+          color: #484646;
+          text-align: center;
+          // font-family: Wesfy;
+        }
+      }
+    }
+  }
+
+  .contactLink {
+    display: flex;
+    align-items: center;
+    margin: 5rem 0 0 0rem;
+
+    span {
+      color: #fff;
+      margin: 0 1rem 0 0;
+
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 600px) {
+      margin: 0 auto !important;
+    }
+
+    @media (max-width: 900px) {
+      margin: 0 0 0 0rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin: 0 0 0 0rem;
+    }
+  }
+}

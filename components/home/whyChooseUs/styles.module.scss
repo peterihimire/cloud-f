@@ -1,0 +1,216 @@
+.whychoose {
+  width: 100%;
+  background-image: url("/images/spiral-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--white);
+  background-size: cover;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 119px 0px;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    .left {
+      width: 40%;
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h2 {
+        max-width: 366px;
+        font-size: 60px;
+        color: var(--heading);
+
+        @media (max-width: 700px) {
+          font-size: 32px;
+        }
+
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+        }
+      }
+
+      > p {
+        font-size: 18px;
+        max-width: 420px;
+        margin: 26px 0px 68px;
+        line-height: 1.3;
+
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+        }
+      }
+
+      .step {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          position: relative;
+          margin-bottom: 83px;
+          display: flex;
+          align-items: center;
+
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+
+          &:first-of-type {
+            &::before {
+              content: "";
+              background: url("/images/setings.svg") no-repeat;
+              width: 65px;
+              height: 65px;
+              flex-shrink: 0;
+              margin-right: 12px;
+            }
+          }
+
+          &:nth-child(2) {
+            &::before {
+              content: "";
+              background: url("/images/circle2.svg") no-repeat;
+              width: 65px;
+              height: 65px;
+              flex-shrink: 0;
+              margin-right: 12px;
+            }
+          }
+
+          &:last-of-type {
+            &::before {
+              content: "";
+              background: url("/images/products1.svg") no-repeat;
+              width: 65px;
+              height: 65px;
+              flex-shrink: 0;
+              margin-right: 12px;
+            }
+
+            &::after {
+              display: none;
+            }
+          }
+
+          &::after {
+            content: "";
+            height: 82px;
+            width: 1;
+            position: absolute;
+            top: 65px;
+            left: 31px;
+            z-index: 1;
+            border: 1px dashed var(--black);
+          }
+
+          > div {
+            display: flex;
+            align-items: center;
+
+            span {
+              margin-left: 22px;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 72px;
+      }
+
+      > ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          width: 100%;
+          display: flex;
+          margin-bottom: 76px;
+
+          @media screen and (max-width: 1200px) {
+            justify-content: center;
+          }
+
+          @media screen and (max-width: 400px) {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
+          .letters {
+            font-size: 20px;
+            color: var(--heading);
+            display: flex;
+            flex-direction: column;
+            font-family: Wesfy-Bold;
+            margin-top: 16px;
+
+            @media screen and (max-width: 400px) {
+             align-items: center;
+            }
+
+            &::before {
+              content: "";
+              width: 107px;
+              height: 4px;
+              background: url("/images/dash2.svg") no-repeat;
+              background-size: cover;
+              margin-bottom: 8px;
+            }
+          }
+
+          .content {
+            margin-left: 77px;
+
+            @media screen and (max-width: 400px) {
+              margin-left: 0;
+              margin-top: 32px;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+            }
+
+            h3 {
+              color: var(--heading);
+              font-family: Wesfy-Bold;
+              font-size: 28px;
+              margin-bottom: 14px;
+
+              @media screen and (max-width: 400px) {
+                max-width: 300px;
+              }
+            }
+
+            p {
+              max-width: 401px;
+              line-height: 1.4;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

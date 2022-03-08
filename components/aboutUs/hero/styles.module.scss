@@ -1,0 +1,95 @@
+.hero {
+  width: 100%;
+  padding: 150px 0px 140px;
+  background: url("/images/aboutushero.png") no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @media (max-width: 600px) {
+    padding: 150px 0px;
+  }
+
+  .wrapper {
+    color: var(--white);
+
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 68px;
+      font-family: Wesfy-Bold;
+      max-width: 450px;
+      margin-bottom: 50px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 34px;
+      }
+    }
+
+    > p {
+      max-width: 532px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .stats {
+      display: flex;
+      margin-top: 201px;
+
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 99px;
+
+        @media screen and (max-width: 600px) {
+          margin-right: 0px;
+          margin-bottom: 32px;
+          text-align: center;
+
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+
+          > span {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+
+        &:last-of-type {
+          margin-right: 0px;
+        }
+
+        span {
+          &:first-of-type {
+            font-size: 45px;
+            font-family: Wesfy-Bold;
+
+            @media screen and (max-width: 700px) {
+              font-size: 32px;
+            }
+          }
+
+          &:last-of-type {
+            font-size: 17px;
+            margin-top: 9px;
+            max-width: 70px;
+            color: #c4c4c4;
+            line-height: 1.6;
+            font-family: Proxima-Medium;
+          }
+        }
+      }
+    }
+  }
+}

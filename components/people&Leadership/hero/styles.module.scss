@@ -1,0 +1,43 @@
+.hero {
+  width: 100%;
+  padding: 226px 0px;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("/images/people1.png") no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 700px) {
+    padding: 150px 16px;
+  }
+
+  .wrapper {
+    color: var(--white);
+
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: Wesfy-Bold;
+      font-size: 68px;
+      margin-bottom: 40px;
+      max-width: 563px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 34px;
+      }
+    }
+
+    p {
+      max-width: 637px;
+      line-height: 1.4;
+      font-size: 18px;
+    }
+  }
+}

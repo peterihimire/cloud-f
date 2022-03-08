@@ -1,0 +1,33 @@
+.hero {
+  width: 100%;
+  padding: 245px 0px;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("/images/contact-us.png") no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 1200px) {
+    background-position: right;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 150px 16px;
+  }
+
+  .wrapper {
+    color: var(--white);
+
+    h1 {
+      font-size: 68px;
+      font-family: Proxima-Bold;
+      text-align: center;
+
+      @media screen and (max-width: 700px) {
+        font-size: 34px;
+      }
+    }
+  }
+}

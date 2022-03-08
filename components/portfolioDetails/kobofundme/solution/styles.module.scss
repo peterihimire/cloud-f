@@ -1,0 +1,130 @@
+.solution {
+  width: 100%;
+  background: #f6f8fa;
+  position: relative;
+  padding-bottom: 500px;
+
+  @media screen and (max-width: 1200px) {
+    padding-bottom: 100px;
+  }
+
+  .wrapper {
+    padding: 71px 0px 0px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 700px) {
+      padding: 71px 16px 0px;
+    }
+
+    .left {
+      width: 53%;
+      // height: 393px;
+
+      @media screen and (max-width: 1200px) {
+        width: fit-content;
+        margin: 0 auto 48px;
+        height: 100%;
+        max-height: 393px;
+      }
+
+      > img {
+        height: 100%;
+        width: 100%;
+        max-width: 537px;
+
+        @media screen and (max-width: 1200px) {
+          max-width: 450px;
+        }
+
+        @media screen and (max-width: 700px) {
+          max-width: 380px;
+        }
+      }
+    }
+
+    .right {
+      width: 45%;
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        max-width: 700px;
+        text-align: center;
+      }
+
+      h2 {
+        font-family: Wesfy-Bold;
+        color: var(--new-blue);
+        font-size: 18px;
+        margin-bottom: 17px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .imageGroup {
+    position: absolute;
+    bottom: -70px;
+    display: flex;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+
+    @media screen and (max-width: 1200px) {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      left: auto;
+      transform: none;
+      margin-top: 72px;
+    }
+
+    @media screen and (max-width: 700px) {
+      display: block;
+      max-width: 399px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    > div {
+      flex: 1;
+      margin-right: 28px;
+
+      &:last-of-type {
+        margin-right: 0px;
+      }
+
+      @media screen and (max-width: 700px) {
+        max-height: 400px;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
+
+      img {
+        width: 100%;
+
+        @media screen and (max-width: 700px) {
+          height: 100%;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}

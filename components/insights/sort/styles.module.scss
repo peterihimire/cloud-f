@@ -1,0 +1,124 @@
+.sort {
+  width: 100%;
+  margin-bottom: 119px;
+  background: #f4f4f4;
+
+  .wrapper {
+    padding: 100px 0px;
+
+    @media screen and (max-width: 700px) {
+      padding: 72px 16px;
+    }
+
+    .filters {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+      }
+
+      h3 {
+        font-family: Wesfy-Bold;
+        font-size: 20px;
+        color: var(--new-blue);
+        margin-right: 84px;
+        flex-shrink: 0;
+
+        @media screen and (max-width: 1200px) {
+          margin-bottom: 16px;
+          margin-right: 0px;
+        }
+      }
+
+      .filterGroup {
+        width: 100%;
+        max-width: 328px;
+        margin-right: 98px;
+        display: flex;
+        align-items: center;
+
+        &:last-of-type {
+          margin-right: 0px;
+          width: fit-content;
+        }
+
+        &:nth-of-type(2) {
+          margin-right: 42px;
+        }
+
+        @media screen and (max-width: 1200px) {
+          margin-bottom: 16px;
+          margin-right: 0px;
+          flex-direction: column;
+          max-width: 400px;
+
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+
+          &:nth-of-type(2) {
+            margin-right: 0px;
+          }
+        }
+
+        label {
+          display: initial;
+          color: #1f1f1f;
+          font-size: 19px;
+          margin-right: 6px;
+          margin-bottom: 0px;
+
+          @media screen and (max-width: 1200px) {
+            margin-bottom: 10px;
+            margin-right: 0px;
+          }
+        }
+
+        .sortBox {
+          &::after {
+            background: url("/images/selectdrop1.svg") no-repeat center;
+            width: 17px;
+            height: 17px;
+            transform: none;
+            top: 18px;
+          }
+
+          select {
+            background: #f4f4f4 !important;
+            border: 1px solid rgba(30, 35, 72, 0.5);
+          }
+        }
+
+        > button {
+          background: var(--new-blue);
+          border-radius: 3px;
+          color: var(--white);
+          font-family: Proxima-Bold;
+          font-size: 16px;
+          border: 1px solid var(--new-blue);
+        }
+      }
+    }
+
+    .grid {
+      width: 100%;
+      margin-top: 58px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 377px));
+        justify-content: center;
+      }
+    }
+
+    .gridPaginate {
+      width: 100%;
+      margin-top: 71px;
+    }
+  }
+}

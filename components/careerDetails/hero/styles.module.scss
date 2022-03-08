@@ -1,0 +1,55 @@
+.hero {
+  width: 100%;
+  padding: 312px 0px;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("/images/Rectangle\ 1787.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  @media screen and (max-width: 1200px) {
+    padding: 150px 0px;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 150px 16px;
+  }
+
+  .wrapper {
+    color: var(--white);
+
+    h1 {
+      font-family: Proxima-Bold;
+      font-size: 35px;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 1200px) {
+        max-width: 600px;
+      }
+    }
+
+    .tags {
+      width: fit-content;
+      display: flex;
+
+      span {
+        font-size: 20px;
+        border-bottom: 1px solid var(--white);
+        margin-right: 78px;
+        display: block;
+        padding-bottom: 7px;
+
+        @media screen and (max-width: 700px) {
+          margin-right: 32px;
+        }
+
+        &:last-of-type {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

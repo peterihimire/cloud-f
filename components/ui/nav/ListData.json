@@ -1,0 +1,273 @@
+[
+    {
+        "id": 1,
+        "text": "Who we are",
+        "path": "/about-us"
+    },
+    {
+        "id": 2,
+        "text": "Our People Leadership",
+        "path": "/our-people-and-leadership"
+    },
+    {
+        "id": 3,
+        "text": "How we work",
+        "path": "/how-we-work"
+    },
+    {
+        "id": 4,
+        "text": "Our process",
+        "path": "/how-we-work#our-process"
+    },
+    {
+        "id": 5,
+        "text": "Business Affiliation",
+        "path": "/partners-affiliation"
+    },
+    {
+        "id": 6,
+        "text": "Corporate Responsibility",
+        "path": "/about-us/csr"
+    },
+    {
+        "id": 7,
+        "text": "Build your team",
+        "path": "/hire-employee"
+    },
+    {
+        "id": 8,
+        "text": "Blognation",
+        "path": "/about-us"
+    },
+    {
+        "id": 9,
+        "text": "Inclusion & Diversity",
+        "path": "/what-we-believe"
+    },
+    {
+        "id": 10,
+        "text": "Careers",
+        "path": "/careers"
+    },
+    {
+        "id": 11,
+        "text": "Build your team",
+        "path": "/hire-employee"
+    },
+    {
+        "id": 12,
+        "text": "Product design",
+        "path": "/product-design"
+    },
+    {
+        "id": 13,
+        "text": "Research & Development",
+        "path": "/research-development"
+    },
+    {
+        "id": 14,
+        "text": "Cloud security",
+        "path": "/cloud-security"
+    },
+    {
+        "id": 15,
+        "text": "MVP Planning & Strategy",
+        "path": "/mvp-planning"
+    },
+    {
+        "id": 16,
+        "text": "Proof of Concept",
+        "path": "/proof-of-concept"
+    },
+    {
+        "id": 17,
+        "text": "Technical feasibility study",
+        "path": "/technical-feasibility-study"
+    },
+    {
+        "id": 18,
+        "text": "Mobile App Development",
+        "path": "/mobileapp-development"
+    },
+    {
+        "id": 19,
+        "text": "Web App Development",
+        "path": "/webapp-development"
+    },
+    {
+        "id": 20,
+        "text": "DevOps & DevSecOps",
+        "path": "/devops-and-devsecops"
+    },
+    {
+        "id": 21,
+        "text": "Cloud migration",
+        "path": "/cloud-migration"
+    },
+    {
+        "id": 22,
+        "text": "UI/UX Design",
+        "path": "/ui-ux-design"
+    },
+    {
+        "id": 23,
+        "text": "Application re-engineering",
+        "path": "/application-reengineering"
+    },
+    {
+        "id": 24,
+        "text": "Project Takeovers",
+        "path": "/project-takeovers"
+    },
+    {
+        "id": 25,
+        "text": "Support & Bug Fixing",
+        "path": "/support-and-bug-fixing"
+    },
+    {
+        "id": 26,
+        "text": "Quality Assurance (QA Testing)",
+        "path": "/quality-assurance"
+    },
+    {
+        "id": 27,
+        "text": "Application Maintenance",
+        "path": "/application-maintenance"
+    },
+    {
+        "id": 28,
+        "text": "Backup & Disaster Recovery",
+        "path": "/backup-recovery"
+    },
+    {
+        "id": 29,
+        "text": "Implementation & Deployment",
+        "path": "/implementation-and-deployment"
+    },
+    {
+        "id": 30,
+        "text": "Infrastructure Support",
+        "path": "/infrastructure-support"
+    },
+    {
+        "id": 30,
+        "text": "Migrations & Upgrades",
+        "path": "/migrations-upgrades"
+    },
+    {
+        "id": 31,
+        "text": "Product Lifecycle Management (PLM)",
+        "path": "/product-lifecycle"
+    },
+    {
+        "id": 32,
+        "text": "FinTech",
+        "path": "/fintech"
+    },
+    {
+        "id": 33,
+        "text": "Retail",
+        "path": "/retail"
+    },
+    {
+        "id": 34,
+        "text": "Insurance",
+        "path": "/insurance"
+    },
+    {
+        "id": 35,
+        "text": "Non-Profit",
+        "path": "/non-profit"
+    },
+    {
+        "id": 36,
+        "text": "Offshore",
+        "path": "/offshore"
+    },
+    {
+        "id": 37,
+        "text": "Automotive",
+        "path": "/automotive"
+    },
+    {
+        "id": 38,
+        "text": "Healthcare",
+        "path": "/healthcare"
+    },
+    {
+        "id": 39,
+        "text": "Agriculture",
+        "path": "/agriculture"
+    },
+    {
+        "id": 40,
+        "text": "Aerospace and Defense",
+        "path": "/aerospace-and-defense"
+    },
+    {
+        "id": 41,
+        "text": "Nearshore",
+        "path": "/nearshore"
+    },
+    {
+        "id": 42,
+        "text": "Banking & Financial Services",
+        "path": "/banking-and-financial-services"
+    },
+    {
+        "id": 43,
+        "text": "Industrial & Logistics",
+        "path": "/industrial-and-logistics"
+    },
+    {
+        "id": 44,
+        "text": "Media & Entertainment",
+        "path": "/media-and-entertainment"
+    },
+    {
+        "id": 45,
+        "text": "Marketing",
+        "path": "/marketing"
+    },
+    {
+        "id": 46,
+        "text": "Federal Government",
+        "path": "/federal-government"
+    },
+    {
+        "id": 47,
+        "text": "State Government",
+        "path": "/state-government"
+    },
+    {
+        "id": 48,
+        "text": "Higher Institution",
+        "path": "/higher-institution"
+    },
+    {
+        "id": 49,
+        "text": "Clients we serve",
+        "path": "/clients"
+    },
+    {
+        "id": 50,
+        "text": "Accomplishments",
+        "path": "/portfolio"
+    },
+    {
+        "id": 51,
+        "text": "Insight",
+        "path": "/blogs"
+    },
+    {
+        "id": 52,
+        "text": "Shoot us a message",
+        "path": "/contact-us"
+    }
+    ,
+    {
+        "id": 53,
+        "text": "Partners",
+        "path": "/partners-affiliation"
+    }
+] 

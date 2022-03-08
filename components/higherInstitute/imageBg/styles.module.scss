@@ -1,0 +1,91 @@
+.insight {
+  width: 100%;
+  // max-height: 50vh;
+  // background: url("/images/spiral21.png") no-repeat center;
+  // background-color: white;
+  // background-size: cover;
+  // padding: 0 0 140px 0;
+  // margin-bottom: 110px;
+
+  // .wrapper {
+  //   padding: 120px 0px;
+
+  //   @media screen and (max-width: 700px) {
+  //     padding: 72px 0px;
+  // }
+  .imgGrid {
+    // max-width: 90%;
+    // margin: 100px auto;
+    // margin-top: 57px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    // gap: 30px;
+    // position: relative;
+
+    // @media screen and (max-width: 600px) {
+    //   grid-template-columns: repeat(
+    //     auto-fit,
+    //     minmax(200px, 275px)
+    //   ) !important;
+    //   gap: 100px;
+    //   justify-content: center;
+    // }
+
+    // @media screen and (max-width: 1200px) {
+    //   grid-template-columns: repeat(auto-fit, minmax(400px, 475px));
+    //   gap: 100px;
+    //   justify-content: center;
+    // }
+
+    .left {
+      // background-color: #484646;
+      // color: #484646;
+      // width: 400px;
+      // padding: 100px 30px 100px 300px;
+      // @media screen and (max-width: 600px) {
+      //   padding: 50px 10px !important;
+      //   text-align: center;
+      // }
+
+      // @media screen and (max-width: 900px) {
+      //   padding: 50px 10px !important;
+      //   text-align: center;
+      // }
+
+      // @media screen and (max-width: 1200px) {
+      //   padding: 100px 30px 100px 200px;
+      // }
+
+      // h3 {
+      //   font-size: 60px;
+      //   line-height: 50px;
+      // }
+
+      // p {
+      //   font-size: 16px;
+      //   line-height: 25px;
+      //   margin: 40px 0 0 0;
+      // }
+      background: url("/images/half-img-1.png") no-repeat center;
+      background-size: cover;
+      height: 600px;
+
+      @media screen and (max-width: 600px) {
+        height: 300px;
+      }
+    }
+
+    .right {
+      background: url("/images/half-img-2.png") no-repeat center;
+      background-size: cover;
+      height: 600px;
+
+      @media screen and (max-width: 600px) {
+        height: 300px;
+      }
+    }
+  }
+
+  // }
+}

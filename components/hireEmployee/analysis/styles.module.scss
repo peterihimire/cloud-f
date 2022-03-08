@@ -1,0 +1,109 @@
+.analysis {
+  width: 100%;
+  background: #f4f4f4;
+
+  .wrapper {
+    padding: 45px 0px 64px;
+
+    @media screen and (max-width: 700px) {
+      padding: 45px 16px 64px;
+    }
+
+    h2 {
+      color: var(--heading);
+      font-family: Proxima-Bold;
+      margin-bottom: 88px;
+      font-family: Wesfy-Bold;
+      font-size: 40px;
+      text-align: center;
+
+      @media screen and (max-width: 700px) {
+        font-size: 32px;
+      }
+    }
+
+    .tableWrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 2px solid #bfbfbf;
+        border-top: 0;
+        background: var(--white);
+
+        th,
+        td {
+          white-space: nowrap;
+          text-align: center;
+          padding: 21px 32px;
+        }
+
+        th {
+          background: var(--new-blue);
+          color: var(--white);
+          font-size: 22px;
+          font-family: Proxima-Bold;
+        }
+
+        td {
+          border: 2px solid #bfbfbf;
+
+          p {
+            font-size: 18px;
+          }
+        }
+
+        tr {
+          td {
+            &.title {
+              p {
+                font-size: 18px;
+                font-family: Proxima-Medium;
+              }
+            }
+
+            &.timeline {
+              padding-left: 122px;
+              padding-right: 122px;
+            }
+
+            &.inHouse {
+              padding-left: 71px;
+              padding-right: 71px;
+            }
+
+            &.freelance {
+              padding-left: 72px;
+              padding-right: 72px;
+            }
+          }
+        }
+      }
+    }
+
+    .hirelink {
+      width: 100%;
+      margin-top: 84px;
+      display: flex;
+      justify-content: center;
+
+      a {
+        background: var(--new-blue);
+        border: 1px solid var(--new-blue);
+        border-radius: 4px;
+        color: var(--white);
+        font-size: 20px;
+        font-family: Proxima-Bold;
+      }
+    }
+  }
+}

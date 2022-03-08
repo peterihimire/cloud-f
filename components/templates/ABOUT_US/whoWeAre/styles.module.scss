@@ -1,0 +1,206 @@
+.who {
+  //   padding-top: 250px;
+  position: relative;
+  background: #f4f4f4;
+
+  @media screen and (max-width: 903px) {
+    padding: 0px 16px;
+  }
+
+  .cards {
+    display: flex;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+
+    @media screen and (max-width: 903px) {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      margin-top: 64px;
+    }
+
+    .card {
+      flex: 1;
+      padding: 8px 0px;
+      background: var(--white);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      margin-right: 46px;
+
+      @media screen and (max-width: 903px) {
+        margin-right: 0px;
+        margin-bottom: 48px;
+        max-width: 300px;
+
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
+
+      &:last-of-type {
+        margin-right: 0px;
+      }
+
+      .cardHeader {
+        padding: 0px 23px;
+        color: #c4c4c4;
+        font-size: 25px;
+      }
+
+      .cardBody {
+        padding: 20px 40px 38px;
+
+        h3 {
+          font-size: 32px;
+          color: #030377;
+          max-width: 166px;
+          line-height: 1.2;
+          font-family: Proxima-Medium;
+        }
+
+        p {
+          //   max-width: 271px;
+          line-height: 1.4;
+          color: var(--black);
+          margin-top: 47px;
+        }
+      }
+
+      .cardFooter {
+        padding: 0px 23px;
+        width: 100%;
+
+        hr {
+          border: 3px solid #030377;
+        }
+      }
+    }
+  }
+
+  .content {
+    padding-top: 400px;
+    display: flex;
+    background: url("/images/spiral4.png") no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    width: 93%;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 64px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 903px) {
+      padding-top: 100px;
+    }
+
+    .left {
+      width: 40%;
+      background: url("/images/about2.png") no-repeat;
+      background-size: cover;
+      position: relative;
+      min-height: 731px;
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        max-width: 512px;
+        margin-bottom: 48px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      > img {
+        &:first-of-type {
+          position: absolute;
+          max-height: 399px;
+          max-width: 351px;
+          top: 58px;
+          right: 20px;
+
+          @media screen and (max-width: 1200px) {
+            position: relative;
+            top: auto;
+            right: auto;
+            max-height: 250px;
+            width: 60%;
+          }
+        }
+
+        &:last-of-type {
+          max-width: 338px;
+          max-height: 370px;
+          position: absolute;
+          top: 250px;
+          right: -150px;
+
+          @media screen and (max-width: 1200px) {
+            position: relative;
+            top: auto;
+            right: auto;
+            max-height: 250px;
+            width: 60%;
+            margin-top: 48px;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        max-width: 512px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 36px;
+        color: var(--heading);
+        font-family: Wesfy-Medium;
+
+        @media screen and (max-width: 700px) {
+          font-size: 32px;
+        }
+      }
+
+      .lead {
+        text-align: justify;
+        max-width: 479px;
+        margin: 32px 0px;
+        color: var(--new-blue);
+        font-size: 18px;
+        font-family: Proxima-Medium;
+
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+        }
+      }
+
+      .text {
+        font-size: 16px;
+        max-width: 522px;
+        line-height: 1.6;
+        text-align: justify;
+        margin-top: 25px;
+
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.caseStudies {
+  width: 100%;
+  margin-bottom: 85px;
+
+  .wrapper {
+    padding: 120px 0px;
+
+    @media screen and (max-width: 700px) {
+      padding: 120px 16px;
+    }
+
+    .container {
+      margin: 0;
+    }
+  }
+}

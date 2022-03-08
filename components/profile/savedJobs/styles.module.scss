@@ -1,0 +1,142 @@
+.saved {
+  width: 100%;
+  background: #f4f4f4;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f4f4f4;
+    z-index: 2;
+  }
+
+  .wrapper {
+    padding: 200px 0px 316px;
+
+    @media screen and (max-width: 700px) {
+      padding: 200px 16px 316px;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: var(--heading);
+      font-family: Wesfy-Bold;
+      text-align: center;
+
+      @media screen and (max-width: 700px) {
+        font-size: 34px;
+      }
+    }
+
+    > .lead {
+      margin-top: 18px;
+      font-size: 20px;
+      font-family: Proxima-Medium;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      margin-top: 71px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 31px;
+
+      @media screen and (max-width: 903px) {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 284px));
+      }
+
+      .card {
+        padding: 15px 18px;
+        background: var(--white);
+        box-shadow: 0px 0px 5px 1px rgba(89, 89, 89, 0.1);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+
+        .cardHeader {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .location {
+            display: flex;
+            align-items: baseline;
+
+            i {
+              font-size: 14px;
+            }
+
+            span {
+              margin-left: 8px;
+              font-size: 14px;
+            }
+          }
+
+          .removeBtn {
+            width: fit-content;
+
+            button {
+              width: 15px;
+              height: 15px;
+              background: rgba(196, 196, 196, 0.5);
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 7px;
+              color: #000000;
+            }
+          }
+        }
+
+        .cardBody {
+          width: 100%;
+          margin-top: 37px;
+          margin-bottom: 35px;
+
+          h3 {
+            font-size: 17px;
+            color: var(--black);
+            font-family: Proxima-Medium;
+            margin-bottom: 19px;
+          }
+
+          p {
+            max-width: 248px;
+            line-height: 1.5;
+            color: #878787;
+            font-size: 14px;
+          }
+        }
+
+        .cardFooter {
+          margin-top: auto;
+          display: flex;
+          align-items: baseline;
+
+          span {
+            width: 9px;
+            height: 9px;
+            background: var(--new-blue);
+            margin-right: 6px;
+          }
+
+          p {
+            font-size: 14px;
+            color: var(--new-blue);
+          }
+        }
+      }
+    }
+  }
+}

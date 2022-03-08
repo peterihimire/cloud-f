@@ -1,0 +1,96 @@
+.commitment {
+  width: 100%;
+  background-color: #f4f4f4;
+  background-image: url("/images/spiralbleive.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 204px;
+
+  .wrapper {
+    padding: 72px 0px;
+
+    @media screen and (max-width: 903px) {
+      padding: 72px 16px;
+    }
+
+    .lead {
+      width: max-content;
+      margin-bottom: 64px;
+
+      @media screen and (max-width: 903px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 512px;
+      }
+
+      h2 {
+        font-family: Wesfy-Regular;
+        font-size: 32px;
+        color: var(--heading);
+        margin-bottom: 13px;
+
+        @media screen and (max-width: 903px) {
+          text-align: center;
+        }
+      }
+
+      p {
+        max-width: 520px;
+        color: var(--heading);
+        font-size: 20px;
+
+        @media screen and (max-width: 903px) {
+          text-align: center;
+        }
+      }
+    }
+
+    .grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      @media screen and (max-width: 903px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .card {
+        max-height: 589px;
+        height: auto;
+        position: relative;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+
+        .content {
+          width: 100%;
+          position: absolute;
+          max-width: 288px;
+          background: rgba(34, 34, 34, 0.85);
+          border-radius: 4px;
+          bottom: 0;
+          left: 0;
+          padding: 27px 20px;
+          z-index: 2;
+
+          p {
+            color: var(--white);
+            font-size: 18px;
+            max-width: 233px;
+          }
+
+          a {
+            color: var(--white);
+            font-family: Proxima-Bold;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

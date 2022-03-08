@@ -1,0 +1,115 @@
+.careerForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 32px;
+    font-family: Wesfy-Bold;
+    margin-bottom: 25px;
+  }
+
+  .lead {
+    max-width: 492px;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+
+    span {
+      font-family: Proxima-Bold;
+    }
+  }
+
+  > form {
+    margin-top: 44px;
+    width: 100%;
+
+    .formGroup {
+      width: 100%;
+      margin-bottom: 32px;
+
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+
+      label {
+        margin-bottom: 8px;
+        color: var(--new-blue);
+        font-size: 14px;
+        font-family: Proxima-Bold;
+      }
+
+      input,
+      select {
+        border-radius: 0px !important;
+        border: 1px solid var(--ghost);
+        padding: 12px 18px;
+
+        &:focus {
+          border: 1px solid var(--new-blue);
+        }
+
+        &::placeholder {
+          color: #aeaeae;
+        }
+      }
+
+      select {
+        color: #aeaeae;
+      }
+    }
+
+    .check {
+      width: 100%;
+      margin-top: 25px;
+
+      label {
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+
+        input[type="checkbox"] {
+          height: 16px !important;
+          width: 16px !important;
+          flex-shrink: 0;
+        }
+
+        span {
+          margin-left: 16px;
+          font-size: 14px;
+          color: #000000;
+        }
+      }
+    }
+
+    .submitBtn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 43px;
+
+      button {
+        width: 213px;
+        height: 53px;
+        background: var(--new-blue);
+        border: 1px solid var(--new-blue);
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 16px;
+        font-family: Proxima-Bold;
+      }
+    }
+  }
+}

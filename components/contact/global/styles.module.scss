@@ -1,0 +1,37 @@
+.global {
+  width: 100%;
+  background: var(--white);
+
+  .wrapper {
+    padding: 71px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 700px) {
+      padding: 71px 16px;
+    }
+
+    h2 {
+      max-width: 850px;
+      text-align: center;
+      color: #010101;
+      font-size: 30px;
+      font-family: Wesfy-Bold;
+      margin-bottom: 100px;
+    }
+
+    .map {
+      width: 87%;
+      margin: 0 auto;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

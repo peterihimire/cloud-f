@@ -1,0 +1,91 @@
+.partners {
+  background-color: #e5e5e5;
+  background-image: url("/images/partnerSpiral.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-bottom: 120px;
+  .wrapper {
+    padding: 119px 0px;
+
+    @media screen and (max-width: 700px) {
+      padding: 72px 16px;
+    }
+
+    .message {
+      width: 100%;
+      margin: 1.5em;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--heading);
+      font-family: Wesfy-Bold;
+      font-size: 40px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 32px;
+      }
+    }
+
+    .grid {
+      width: 100%;
+      margin-top: 71px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      gap: 40px 33px;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 275px));
+        justify-content: center;
+      }
+
+      .card {
+        background: var(--white);
+        border: 0.5px solid #d9d6d6;
+        box-shadow: 0px 0px 5px 1px rgba(89, 89, 89, 0.1);
+        border-radius: 4px;
+        padding: 42px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .name {
+          font-size: 2em;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        .image {
+          width: fit-content;
+          // margin-bottom: 28px;
+          min-height: 90px;
+
+          svg {
+            height: 100%;
+          }
+        }
+
+        .cardBody {
+          width: 100%;
+          // margin-top: auto;
+
+          p {
+            max-width: 237px;
+            line-height: 1.4;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .gridPaginate {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+}

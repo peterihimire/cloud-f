@@ -1,0 +1,65 @@
+.features {
+  width: 100%;
+  background: #f4f4f4;
+
+  .wrapper {
+    padding: 32px 0px 45px;
+
+    @media screen and (max-width: 700px) {
+      padding: 32px 16px 45px;
+    }
+
+    h2 {
+      color: var(--heading);
+      margin-bottom: 76px;
+      font-family: Wesfy-Bold;
+      text-align: center;
+      font-size: 40px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 32px;
+      }
+    }
+
+    .grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: center;
+      }
+
+      .card {
+        background: var(--white);
+        box-shadow: 0px 0px 4px 1px rgba(115, 115, 115, 0.25);
+        border-radius: 4px;
+        padding: 102px 63px 59px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .cardImage {
+          width: fit-content;
+        }
+
+        .cardBody {
+          margin-top: 23px;
+          width: fit-content;
+
+          p {
+            font-family: Proxima-Medium;
+            font-size: 18px;
+            color: var(--new-blue);
+            line-height: 1.8;
+            max-width: 170px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

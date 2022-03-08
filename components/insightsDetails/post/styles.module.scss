@@ -1,0 +1,407 @@
+.post {
+  width: 100%;
+  margin-bottom: 150px;
+  background: #f4f4f4;
+
+  .wrapper {
+    padding: 71px 0px;
+
+    .postContent {
+      font-size: 1.1rem;
+      p {
+        font-size: 1.1rem;
+        margin: 15px 0;
+        line-height: 1.7;
+      }
+      ul {
+        padding-left: 30px;
+
+        li {
+          list-style-type: circle;
+          margin: 10px 0;
+        }
+      }
+      ol {
+        padding-left: 30px;
+
+        li {
+          list-style-type: decimal;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      padding: 71px 16px;
+    }
+
+    .opening {
+      width: 100%;
+
+      @media screen and (max-width: 1200px) {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        font-family: Proxima-Bold;
+        color: var(--new-blue);
+        font-size: 25px;
+        margin-bottom: 26px;
+
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+        }
+      }
+
+      .openingWrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+
+        @media screen and (max-width: 1200px) {
+          flex-direction: column-reverse;
+        }
+
+        .openingText {
+          width: 60%;
+
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+          }
+
+          p {
+            line-height: 1.8;
+            max-width: 800px;
+            font-size: 18px;
+            text-align: justify;
+          }
+        }
+
+        .openingImage {
+          width: 35%;
+          height: 100%;
+
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 64px;
+          }
+
+          @media screen and (max-width: 600px) {
+            height: 300px;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .main {
+      width: 100%;
+      margin-top: 129px;
+
+      @media screen and (max-width: 1200px) {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h2 {
+        font-family: Proxima-Bold;
+        color: var(--new-blue);
+        font-size: 25px;
+        margin-bottom: 51px;
+
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+        }
+      }
+
+      .mainImage {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      > p {
+        line-height: 1.8;
+        font-size: 18px;
+        margin-top: 62px;
+
+        @media screen and (max-width: 1200px) {
+          text-align: justify;
+        }
+      }
+    }
+
+    .subMain {
+      width: 100%;
+      margin-top: 118px;
+
+      @media screen and (max-width: 1200px) {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h2 {
+        font-family: Proxima-Bold;
+        color: var(--new-blue);
+        font-size: 25px;
+        margin-bottom: 38px;
+
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+        }
+      }
+
+      .subMainWrapper {
+        width: 100%;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1200px) {
+          flex-direction: column;
+        }
+
+        .subMainImage {
+          width: 40%;
+          height: 100%;
+
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 64px;
+          }
+
+          @media screen and (max-width: 600px) {
+            height: 300px;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        .subMainText {
+          width: 55%;
+
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+          }
+
+          p {
+            line-height: 1.8;
+            max-width: 800px;
+            font-size: 18px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+
+    .closing {
+      margin-top: 100px;
+      width: 100%;
+      border-bottom: 1px solid rgba(3, 3, 119, 0.1);
+      padding-bottom: 22px;
+
+      @media screen and (max-width: 1200px) {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h3 {
+        font-family: Proxima-Bold;
+        color: var(--new-blue);
+        font-size: 25px;
+        margin-bottom: 38px;
+
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+        }
+      }
+
+      > ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        max-width: 947px;
+
+        li {
+          display: flex;
+          align-items: baseline;
+          margin-bottom: 10px;
+
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+
+          &::before {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--black);
+            margin-right: 10px;
+            flex-shrink: 0;
+          }
+
+          p {
+            line-height: 1.8;
+            font-size: 18px;
+
+            > a {
+              color: inherit;
+              white-space: pre-line;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .blogInfo {
+      width: 100%;
+      margin-top: 41px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 700px) {
+        align-items: flex-start;
+      }
+
+      .authorInfo {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 1200px) {
+          margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 400px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .authorImage {
+          width: fit-content;
+          margin-right: 44px;
+
+          @media screen and (max-width: 400px) {
+            margin-bottom: 25px;
+          }
+
+          img {
+            width: 82px;
+            height: 82px;
+            border-radius: 50%;
+          }
+        }
+
+        .authorRight {
+          width: fit-content;
+          display: flex;
+          flex-direction: column;
+
+          .authorName {
+            font-size: 20px;
+            color: var(--new-blue);
+            font-family: Proxima-Bold;
+          }
+
+          .authorJob {
+            color: #505050;
+            font-size: 20px;
+            margin-top: 6px;
+          }
+        }
+      }
+
+      .postInfo {
+        width: fit-content;
+        display: flex;
+
+        @media screen and (max-width: 700px) {
+          flex-direction: column;
+        }
+
+        > div {
+          width: fit-content;
+          margin-right: 32px;
+
+          &:last-of-type {
+            margin-right: 0px;
+          }
+
+          @media screen and (max-width: 700px) {
+            margin-right: 0px;
+            margin-bottom: 16px;
+
+            &:last-of-type {
+              margin-bottom: 0px;
+            }
+          }
+
+          > p {
+            font-size: 20px;
+            color: #505050;
+
+            > span {
+              color: var(--new-blue);
+              font-family: Proxima-Bold;
+            }
+          }
+        }
+      }
+    }
+
+    .relatedPosts {
+      width: 100%;
+      margin-top: 112px;
+
+      h2 {
+        font-size: 40px;
+        color: var(--heading);
+        font-family: Wesfy-Medium;
+        text-align: center;
+
+        @media screen and (max-width: 700px) {
+          font-size: 32px;
+        }
+      }
+
+      .grid {
+        width: 100%;
+        display: grid;
+        margin-top: 71px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 29px;
+
+        @media screen and (max-width: 1200px) {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 377px));
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

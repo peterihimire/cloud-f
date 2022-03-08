@@ -1,0 +1,88 @@
+.client {
+  width: 100%;
+  background: var(--black);
+
+  .wrapper {
+    color: var(--white);
+    padding: 71px 16px;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 71px;
+      text-align: center;
+
+      @media screen and (max-width: 700px) {
+        font-size: 32px;
+      }
+    }
+
+    .gridImage {
+      width: 100%;
+
+      @media screen and (max-width: 1264px) {
+        display: none;
+      }
+
+      svg {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 48px 32px;
+
+      @media screen and (min-width: 1265px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 903px){
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .card {
+        padding: 18px 16px 18px 20px;
+        background: var(--white);
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+
+        .cardHeader {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+
+          span {
+            font-size: 28px;
+            color: var(--heading);
+            font-family: Wesfy-Bold;
+          }
+        }
+
+        .cardBody {
+          margin: 32px 0px;
+          width: 100%;
+
+          h3 {
+            font-size: 20px;
+            color: var(--black);
+            margin-bottom: 25px;
+            font-family: Proxima-Bold;
+            max-width: 200px;
+          }
+
+          p {
+            max-width: 300px;
+            font-size: 16px;
+            line-height: 1.4;
+            color: var(--heading);
+          }
+        }
+      }
+    }
+  }
+}

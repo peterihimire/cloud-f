@@ -1,0 +1,201 @@
+.expertise {
+  width: 100%;
+
+  .wrapper {
+    padding: 99px 0px 100px;
+
+    @media screen and (max-width: 700px) {
+      padding: 99px 16px 100px;
+    }
+
+    .ourExpertise {
+      width: 100%;
+
+      h2 {
+        font-size: 35px;
+        color: var(--heading);
+        font-family: Wesfy-Bold;
+        margin-bottom: 99px;
+        text-align: center;
+
+        @media screen and (max-width: 700px) {
+          font-size: 32px;
+        }
+      }
+
+      .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+
+        @media screen and (max-width: 1200px) {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 265px));
+          justify-content: center;
+        }
+
+        .expertiseCard {
+          background: var(--white);
+          box-shadow: 1px 0px 4px rgba(99, 99, 99, 0.15);
+          border-radius: 4px;
+          padding: 29px 30px 23px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .cardImg {
+            width: fit-content;
+          }
+
+          .cardBody {
+            width: 100%;
+            margin: 11px 0px 25px;
+
+            h3 {
+              font-family: Proxima-Medium;
+              font-size: 18px;
+              margin-bottom: 14px;
+              text-align: center;
+            }
+
+            p {
+              // max-width: 205px;
+              text-align: center;
+              line-height: 1.4;
+              font-size: 14px;
+              color: var(--heading);
+              margin: 0 auto;
+            }
+          }
+
+          .cardFooter {
+            width: 100%;
+            margin-top: auto;
+            text-align: center;
+
+            a {
+              color: var(--new-blue);
+              font-size: 14px;
+              font-family: Proxima-Medium;
+            }
+          }
+        }
+      }
+    }
+
+    .who {
+      margin-top: 119px;
+      width: 100%;
+
+      h2 {
+        font-size: 35px;
+        color: var(--heading);
+        font-family: Wesfy-Bold;
+        margin-bottom: 115px;
+        text-align: center;
+
+        @media screen and (max-width: 700px) {
+          font-size: 32px;
+        }
+      }
+
+      .whoWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 1200px) {
+          flex-direction: column-reverse;
+        }
+
+        .whoLeft {
+          width: 60%;
+
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+            max-width: 700px;
+            margin-top: 84px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          h3 {
+            text-align: justify;
+            max-width: 479px;
+            color: var(--new-blue);
+            font-size: 18px;
+            font-family: Proxima-Bold;
+            margin-bottom: 26px;
+          }
+
+          p {
+            text-align: justify;
+            max-width: 522px;
+            line-height: 1.5;
+          }
+        }
+
+        .whoRight {
+          width: 35%;
+          position: relative;
+          background: var(--black);
+          height: 436px;
+
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+            max-width: 700px;
+          }
+
+          @media screen and (max-width: 700px) {
+            height: auto;
+            max-height: 436px;
+          }
+
+          .whoImg {
+            position: absolute;
+            top: 39px;
+            right: 94px;
+            height: 100%;
+            width: fit-content;
+
+            @media screen and (max-width: 1200px) {
+              right: 50%;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+
+            @media screen and (max-width: 700px) {
+              position: relative;
+              width: 100%;
+              top: auto;
+              right: auto;
+              height: auto;
+              transform: none;
+              left: auto;
+            }
+
+            img {
+              height: 100%;
+              max-width: 488px;
+
+              @media screen and (max-width: 700px) {
+                width: 100%;
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.imgLogo {
+  width: 100%;
+  height: 40px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 20px;
+}

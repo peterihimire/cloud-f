@@ -1,0 +1,136 @@
+.result {
+  width: 100%;
+  background-color: var(--black);
+  background-image: url("/images/pd-spiral.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .wrapper {
+    padding: 72px 0px;
+    color: var(--white);
+
+    @media screen and (max-width: 700px) {
+      padding: 72px 16px;
+    }
+
+    .leadPara {
+      font-family: Proxima-Bold;
+      font-size: 18px;
+      margin-bottom: 19px;
+
+      @media screen and (max-width: 1200px) {
+        text-align: center;
+      }
+    }
+
+    .lead {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .left {
+        width: 40%;
+
+        @media screen and (max-width: 1200px) {
+          width: 100%;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 32px;
+        }
+
+        h2 {
+          max-width: 485px;
+          color: #ebebeb;
+          font-size: 40px;
+          font-family: Proxima-Medium;
+          line-height: 1.1;
+
+          @media screen and (max-width: 700px) {
+            font-size: 32px;
+          }
+        }
+      }
+
+      .right {
+        width: 50%;
+
+        @media screen and (max-width: 1200px) {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 512px;
+        }
+
+        p {
+          font-size: 18px;
+          text-align: justify;
+          //   max-width: 583px;
+          line-height: 1.8;
+
+          @media screen and (max-width: 1200px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .carousel {
+      margin-top: 84px;
+
+      .slideWrapper {
+        width: 100%;
+
+        // > * {
+        //   > * {
+        //    width: 100%;
+        //   }
+        // }
+      }
+
+      .card {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 903px) {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          width: 100%;
+          gap: 32px;
+        }
+
+        img {
+          margin-right: 32px;
+          flex-shrink: 0;
+          width: 350px;
+          height: 300px;
+
+          &:last-of-type {
+            margin-right: 0px;
+          }
+
+          @media screen and (max-width: 903px) {
+            margin-right: 0px;
+            max-width: 100%;
+            margin: 0 auto;
+
+            &:last-of-type {
+              margin-right: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

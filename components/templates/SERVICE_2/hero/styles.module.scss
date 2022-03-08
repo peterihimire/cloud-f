@@ -1,0 +1,41 @@
+.hero {
+  width: 100%;
+  padding: 282px 0px;
+  background-size: cover;
+
+  @media screen and (max-width: 700px) {
+    padding: 150px 16px;
+  }
+
+  .wrapper {
+    color: var(--white);
+
+    @media screen and (max-width:903px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 68px;
+      font-family: Wesfy-Bold;
+      max-width: 667px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 34px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      margin: 40px 0px;
+      max-width: 778px;
+      line-height: 1.4;
+    }
+
+    a {
+      font-family: Proxima-Medium;
+    }
+  }
+}

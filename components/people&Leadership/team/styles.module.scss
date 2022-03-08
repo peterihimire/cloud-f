@@ -1,0 +1,65 @@
+.team {
+  width: 100%;
+  margin-bottom: 120px;
+  background: #f4f4f4;
+
+  .wrapper {
+    padding: 90px 0px 117px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 1200px) {
+      padding: 32px 0px 72px;
+    }
+
+    @media screen and (max-width: 700px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 60px;
+      font-family: Wesfy-Medium;
+      color: var(--heading);
+      text-align: center;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 84px;
+        border: 3px solid #b3b3b3;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media screen and (max-width: 700px) {
+        font-size: 32px;
+      }
+    }
+
+    > p {
+      max-width: 600px;
+      color: #878787;
+      font-size: 19px;
+      font-family: Proxima-Medium;
+      text-align: center;
+    }
+
+    .grid {
+      margin-top: 64px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 43px 45px;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+        justify-content: center;
+      }
+    }
+  }
+}
